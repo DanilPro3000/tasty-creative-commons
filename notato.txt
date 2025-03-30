@@ -1,0 +1,56 @@
+
+Тіні для версій стилів
+style="box-shadow: 0 0 5px #891822, 0 0 10px #891822, 0 0 15px #891822;"
+
+Підконтент
+		<section class="underground">
+			<div class="undcontent">
+				<h2>Що буде у разі порушення умов ліцензування?</h2>
+				<p>Так, кримінальна відповідальність за порушення авторського права і суміжних прав, зокрема, передбачена за ст. 176 КК України - незаконне відтворення, використання та розповсюдження творів науки, літератури і мистецтва, комп’ютерних програм і баз даних, інших творів, а так само незаконне відтворення, використання та розповсюдження виконань, фонограм, відеограм і програм мовлення, їх незаконне тиражування та розповсюдження на аудіо- та відеокасетах, дискетах, інших носіях інформації, камкординг, кардшейрінг або інше умисне порушення авторського права і суміжних прав, а також фінансування таких дій, якщо це завдало матеріальної шкоди у значному розмірі караються штрафом від трьохсот до однієї тисячі неоподатковуваних мінімумів доходів громадян або виправними роботами на строк до двох років, або позбавленням волі на той самий строк.</p>
+			</div>
+		</section>
+
+
+.underground {
+	background-color: black; 
+	color: black; 
+	background-image: url('Media/judge.jfif'); 
+	background-size: cover; 
+	background-attachment: fixed; 
+	margin: 0; 
+	padding: 0; 
+	overflow-x: hidden;
+}
+.undcontent {
+	max-width: 1200px;
+    margin: auto;
+    background: #f5e8df;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+.underground {
+    background: url('Media/judge2.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+.underground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Темний напівпрозорий фон для контрасту */
+    z-index: 1;
+}
+.undcontent {
+    position: relative;
+    z-index: 2; /* Щоб контент був над затемненням */
+}
