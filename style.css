@@ -237,7 +237,7 @@ iframe, video, img {
     }
 	aside {
 		font-size: 1.8rem;
-		max-width: 25%;
+		margin: auto;
 		padding: 15px;
 	}
 	nav a {
