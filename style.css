@@ -11,7 +11,7 @@ body {
 	background-size: cover; 
 	background-attachment: fixed; 
 	padding: 0;
-	verflow-x: hidden;
+	overflow-x: hidden;
 }
 header {
 	display: flex;
@@ -98,8 +98,16 @@ iframe, video, img {
 	padding: 20px;
 	border-radius: 8px;
 	z-index: 1;
+	position: relative;
 }
-
+.braun {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 700px;
+    opacity: 0.5;
+    z-index: 1;
+}
 .logo {
     display: block;
     margin-left: auto;
@@ -227,6 +235,14 @@ iframe, video, img {
     p {
         font-size: 1rem;
     }
+	aside {
+		font-size: 1.8rem;
+		width: 95%;
+		padding: 15px;
+	}
+	header {
+		font-size: 1.8rem;
+	}
     .arrow-up {
         right: 10px;
         bottom: 10px;
