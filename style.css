@@ -237,10 +237,10 @@ iframe, video, img {
     }
 	aside {
 		font-size: 1.8rem;
-		width: 95%;
+		max-width: 25%;
 		padding: 15px;
 	}
-	header {
+	nav a {
 		font-size: 1.8rem;
 	}
     .arrow-up {
